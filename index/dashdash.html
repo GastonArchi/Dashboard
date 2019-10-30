@@ -9,14 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <title>Dash</title>
+  <title>Dashboard</title>
 
 
 </head>
 
 <body>
   <nav class="navbar navbar-expand navbar-dark">
-    <div style="width: 231px; border-right: 1px solid black; margin-right: 20px">
+    <div style="width: 288px; border-right: 1px solid black; margin-right: 20px">
       <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
       <a class="navbar-brand" href="#">
         <img src="https://i.pinimg.com/originals/6c/17/f9/6c17f904723a27f91b1736cf2ac34510.png" width="30" height="30"
@@ -28,6 +28,7 @@
       </a></div>
 
     <div class="container">
+      <!-- No se como hacer que el input no tenga fondo blanco -->
       <div class=" icons col-10"><input class="col-9" type="text"></div>
       <div class="icons col-4">
         <i class="fa fa-envelope-o"></i>
@@ -69,22 +70,7 @@
         </div>
 
       </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="box shadow ">
-            <div id="line-adwords" class=""> </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="box shadow mt-4">
-            <div id="barchart"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-
-        <h1>Volver Arriba</h1>
-      </div>
+      <!-- Aca pensaba hacer otro row con columnas y despues cambiar las cantidades de cada cosa con media querys pero no creo que sea la forma optima de hacer responsive el dash -->
     </div> <!-- /#page-content-wrapper -->
   </div> <!-- /#wrapper -->
   <!-- Bootstrap core JavaScript -->
@@ -109,69 +95,6 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-
-  <script>
-    var options = {
-      chart: {
-        height: 350,
-        type: 'radar',
-      },
-      series: [{
-        name: 'Series 1',
-        data: [20, 100, 40, 30, 50, 80, 33],
-      }],
-      labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      plotOptions: {
-        radar: {
-          size: 140,
-          polygons: {
-            strokeColor: '#e9e9e9',
-            fill: {
-              colors: ['#f8f8f8', '#fff']
-            }
-          }
-        }
-      },
-      title: {
-        text: 'Radar with Polygon Fill'
-      },
-      colors: ['#FF4560'],
-      markers: {
-        size: 4,
-        colors: ['#fff'],
-        strokeColor: '#FF4560',
-        strokeWidth: 2,
-      },
-      tooltip: {
-        y: {
-          formatter: function (val) {
-            return val
-          }
-        }
-      },
-      yaxis: {
-        tickAmount: 7,
-        labels: {
-          formatter: function (val, i) {
-            if (i % 2 === 0) {
-              return val
-            } else {
-              return ''
-            }
-          }
-        }
-      }
-    }
-
-    var chart = new ApexCharts(
-      document.querySelector("#chart"),
-      options
-    );
-
-    chart.render();
-
-
-  </script>
 
   <script src="../js/scripts.js"></script>
 </body>

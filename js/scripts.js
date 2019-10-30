@@ -1,3 +1,32 @@
+
+
+
+
+
+
+
+
+// Estos scripts son importados de la pagina de charts para hacerlos funcionar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.Apex = {
   chart: {
     foreColor: '#ccc',

@@ -36,7 +36,7 @@ select:-webkit-autofill:focus {
 }
 
 .navbar {
-	background-color: #5d2c70
+	background-color: #5d2c70;
 }
 
 #chart, .chart-box {

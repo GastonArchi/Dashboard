@@ -1,7 +1,21 @@
 
+
+
+
+
+/* Estos estilos son importados para que funcionen los charts. */
+
+
+
+
+
+
+
+
+
 body {
   background: #343E59;
-  color: #777;
+  color: rgb(0, 0, 0);
   font-family: Montserrat, Arial, sans-serif;
 }
 
