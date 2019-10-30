@@ -9,6 +9,23 @@
 	padding: 0;
 }
 
+/* Fix para el autocompletado */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  color: #ccc;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 #chart {
 	max-width: 450px;
 	margin: 35px auto;
@@ -250,14 +267,12 @@ div.content {
 }
 
 .container2 {
-	box-shadow: 0 0 1em 0 rgba(51, 51, 51, 0.25);
 	display: block;
 	overflow: hidden;
 	padding: 2em;
 	height: 100vh;
 	position: relative;
 	z-index: 100;
-	width: 110%;
 }
 
 .container2:before {
@@ -291,18 +306,21 @@ div.content {
 
 form button.submit {
 	background: #D93302;
-	border: 1px solid #333;
+	border: 0px;
 	line-height: 1em;
-	padding: 0.5em 0.5em;
+	padding: 0.6em 0.6em;
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
 }
 
 form button:hover, form button:focus, form button:active, form button.loading {
 	background: #333;
-	color: #fff;
+	color: rgb(255, 60, 0);
+	border: 1px solid rgb(255, 60, 0);
 	outline: none;
+	font-weight: bold; 
 }
+
 
 form button.success {
 	background: #27ae60;
@@ -311,9 +329,10 @@ form button.success {
 }
 
 form button.submit2 {
-	background: rgba(255, 255, 255, 0.25);
-	border: 1px solid #333;
+	background: rgba(255, 255, 255, 0.068);
+	border: 1.5px solid rgb(255, 255, 255);
 	line-height: 1em;
+	color: rgb(255, 255, 255);
 	padding: 0.5em 0.5em;
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
@@ -450,7 +469,7 @@ h1 {
 	margin: 0 0 0.5em 0;
 	text-align: center;
 	font-family: 'Righteous', cursive;
-	color: #ccc
+	color: rgb(243, 243, 243)
 }
 
 h1 img {
@@ -464,6 +483,7 @@ html {
 	font-size: 18px;
 	height: 100%;
 }
+
 
 .text-center {
 	text-align: center;
@@ -576,6 +596,9 @@ body {
 }
 
 @media(min-width:768px) {
+
+
+	/* Esto es para el Dash */
 	#wrapper {
 		padding-right: 0;
 	}
@@ -597,6 +620,41 @@ body {
 		margin-left: 0;
 	}
 }
+@media(max-width:1165px) {
+
+h1{
+	font-size: 2em;
+}
+
+.lead{
+
+	display: none;
+}
+
+.display-4{
+
+	display: none;
+}
+
+
+
+}
+@media(max-width:765px){
+
+	h1{
+		font-size: 3em;
+	}
+
+	.container2 {
+		overflow: scroll;
+	}
+
+	
+}
+.icons{
+    position: relative;
+}
+
 
 .flex-container {
 	display: -ms-flexbox;
@@ -628,7 +686,7 @@ body {
 	align-self: auto;
 }
 
-.flex-item:nth-child(2) {
+.flex-item:nth-child(1) {
 	-webkit-order: 0;
 	-ms-flex-order: 0;
 	order: 0;
@@ -653,6 +711,5 @@ body {
 }
 
 .inputs {
-	background-color: #311a3a;
 	color: white;
 }

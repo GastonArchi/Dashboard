@@ -234,7 +234,7 @@ new ApexCharts(document.querySelector("#spark4"), spark4).render();
 
 var optionsLine = {
   chart: {
-    height: 250,
+    height: 270,
     width: 400,
     type: 'line',
     zoom: {
@@ -343,7 +343,7 @@ chartCircle4.render();
 var optionsBar = {
   chart: {
     height: 270,
-    width: 450,
+    width: 400,
     type: 'bar',
     stacked: true,
   },
