@@ -283,17 +283,17 @@ var optionsLine = {
   },
   //colors: ["#3F51B5", '#2196F3'],
   series: [{
-      name: "Asesinatos",
-      data: [3, 6, 17, 13, 2, 13]
-    },
-    {
-      name: "Muertes",
-      data: [3, 6, 2, 10, 8, 3]
-    },
-    {
-      name: "Asistencias",
-      data: [0, 15, 20, 11, 9, 3]
-    }
+    name: "Asesinatos",
+    data: [3, 6, 17, 13, 2, 13]
+  },
+  {
+    name: "Muertes",
+    data: [3, 6, 2, 10, 8, 3]
+  },
+  {
+    name: "Asistencias",
+    data: [0, 15, 20, 11, 9, 3]
+  }
   ],
   title: {
     text: 'K/D/A',
@@ -338,7 +338,6 @@ var optionsCircle4 = {
       size: undefined,
       inverseOrder: true,
       hollow: {
-        margin: 5,
         size: '48%',
         background: 'transparent',
 
@@ -418,17 +417,17 @@ var optionsArea = {
     curve: 'straight'
   },
   series: [{
-      name: "Music",
-      data: [11, 15, 26, 20, 33, 27]
-    },
-    {
-      name: "Photos",
-      data: [32, 33, 21, 42, 19, 32]
-    },
-    {
-      name: "Files",
-      data: [20, 39, 52, 11, 29, 43]
-    }
+    name: "Music",
+    data: [11, 15, 26, 20, 33, 27]
+  },
+  {
+    name: "Photos",
+    data: [32, 33, 21, 42, 19, 32]
+  },
+  {
+    name: "Files",
+    data: [20, 39, 52, 11, 29, 43]
+  }
   ],
   xaxis: {
     categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2'],
